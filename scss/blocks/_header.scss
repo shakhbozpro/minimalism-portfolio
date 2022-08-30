@@ -1,0 +1,116 @@
+/* Site header start */
+.site-header {
+   padding-top: 32px;
+   padding-bottom: 40px;
+   background-color: #F2F2F2;
+}
+.site-header__inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.site-logo {
+   
+}
+.site-logo__img {
+   
+}
+.site-header__burger-btn {
+   padding: 0;
+   border: none;
+   background: transparent;
+   width: 24px;
+   height: 13px;
+   background-image: url("../images/close-btn.svg");
+   @include bg(null, contain);
+}
+.js-btn-open {
+   background-image: url("../images/btn-open.svg");
+}
+.site-nav {
+   position: fixed;
+   top: 88px;
+   right: 32px;
+   z-index: 10;
+   width: 100%;
+   max-width: 223px;
+   padding: 40px 20px;
+   text-align: center;
+   transform: translateX(400px);
+   transition: transform 0.5s ease;
+   background-color: var(--main-graish-blue-color);
+}
+.site-nav-open .site-header__inner .site-nav {
+   transform: translateX(0)
+   
+}
+.site-nav__list {
+   @include ul-unstiled;
+}
+.site-nav__item {
+   &:not(:last-child) {
+      margin-bottom: 32px;
+   }
+}
+.site-nav__link {
+   font-size: 12px;
+   line-height: 14px;
+   text-align: center;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   transition: color 0.2s ease;
+   
+   &:hover {
+      color: var(--main-green-color);
+   }
+}
+
+@include mobile-first(650px) {
+   .site-header {
+      padding: 64px 0 47px 0;
+   }
+   .container {
+      padding: 0 40px;
+   }
+   .site-header__burger-btn {
+      display: none;
+   }
+   .site-nav {
+      position: static;
+      top: 0;
+      right: 0;
+      width: auto;
+      max-width: none;
+      padding: 0;
+      text-align: left;
+      transform: translateX(0);
+      background-color: transparent;
+   }
+   .site-nav__list {
+      display: flex;
+      align-items: center;
+   }
+   .site-nav__item {
+      &:not(:last-child) {
+         margin-right: 42px;
+         margin-bottom: 0;
+      }
+   }
+   .site-nav__link {
+      color: var(--main-graish-blue-color);
+   }
+
+   .site-nav__link--active {
+      color: var(--main-green-color);
+   }
+}
+
+@include mobile-first(992px) {
+   .site-header {
+      padding: 64px 0 54px;
+   }
+   .container {
+      padding: 0 20px;
+   }
+}
