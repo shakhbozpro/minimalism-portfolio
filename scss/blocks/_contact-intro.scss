@@ -1,0 +1,59 @@
+/* Contact intro section start */
+
+.contact-intro__inner {
+   border-top: 1px solid #dcdcde;
+}
+
+.contact-intro__heading {
+   font-size: 40px;
+   line-height: 42px;
+   letter-spacing: -0.357143px;
+   color: var(--main-graish-blue-color);
+   margin-top: 25px;
+}
+
+.contact-intro__text {
+   font-size: 15px;
+   line-height: 30px;
+   margin-top: 0;
+   margin-bottom: 24px;
+   color: var(--main-graish-blue-color);
+   opacity: 0.8;
+}
+
+.contact-intro__list {
+   @include ul-unstiled;
+   display: flex;
+   align-items: center;
+   margin-bottom: 32px;
+}
+
+.contact-intro__item:not(:last-child) {
+   margin-right: 15px;
+}
+
+@include mobile-first(768px) {
+   .contact-intro {
+      padding-top: 54px;
+   }
+   .contact-intro__heading {
+      margin-top: 32px;
+   }
+}
+
+@include mobile-first(992px) {
+   .contact-intro__inner {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 48px;
+   }
+   
+   .contact-intro__heading {
+      margin: 0;
+   }
+   
+   .contact-intro__text-links {
+      width: 100%;
+      max-width: 635px;
+   }
+}

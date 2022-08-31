@@ -1,15 +1,15 @@
 /* About section start */
+
 .about {
    padding-top: 368px;
 }
-.about__inner {
-   
-}
+
 .about__img {
    width: 100%;
    display: block;
    margin: 0 auto;
 }
+
 .about__texts-wrapper {
    width: 100%;
    max-width: 1015px;
@@ -17,6 +17,7 @@
    border-top: 1px solid #dcdcde;
    border-bottom: 1px solid #dcdcde;
 }
+
 .about__line {
    display: block;
    width: 100%;
@@ -25,6 +26,7 @@
    background-color: var(--main-graish-blue-color);
    opacity: 0.15;
 }
+
 .about__heading {
    font-size: 40px;
    line-height: 42px;
@@ -32,6 +34,7 @@
    margin: 32px 0 28px 0;
    color: var(--main-graish-blue-color);
 }
+
 .about__desc {
    font-size: 16px;
    line-height: 30px;
@@ -40,6 +43,7 @@
    color: var(--main-graish-blue-color);
    opacity: 0.8;  
 }
+
 .about__link {
    width: 100%;
    max-width: 202px;
@@ -53,7 +57,7 @@
    color: var(--main-graish-blue-color);
    border: 1px solid var(--main-graish-blue-color);
    transition: color 0.2s ease, background-color 0.2s ease;
-
+   
    &:hover {
       color: var(--main-very-light-grey-color);
       background-color: var(--main-graish-blue-color);

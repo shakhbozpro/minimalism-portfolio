@@ -1,14 +1,17 @@
 /* Article section start */
+
 .article {
    padding-top: 110px;
    padding-bottom: 80px;
 }
+
 .article__inner {
    display: flex;
    flex-direction: column;
    align-items: center;
    text-align: center;
 }
+
 .article__heading {
    width: 100%;
    max-width: 350px;
@@ -19,6 +22,7 @@
    margin-bottom: 40px;
    color: var(--main-graish-blue-color);
 }
+
 .article__line {
    width: 100%;
    height: 1px;
@@ -26,6 +30,7 @@
    background-color: #dcdcde;
    display: none;
 }
+
 .article__link {
    width: 100%;
    max-width: 162px;
@@ -38,7 +43,7 @@
    color: var(--main-graish-blue-color);
    border: 1px solid var(--main-graish-blue-color);
    transition: color 0.2s ease, background-color 0.2s ease;
-
+   
    &:hover {
       color: var(--main-very-light-grey-color);
       background-color: var(--main-graish-blue-color);

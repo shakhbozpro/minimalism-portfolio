@@ -1,7 +1,5 @@
 /* Hero section start */
-.hero {
-   
-}
+
 .hero__inner {
    position: relative;
    width: 100%;
@@ -17,6 +15,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
+   
    .hero__inner {
       background-image: url("../images/hero-bg-img-mobile@2x.jpg");
    }
@@ -88,6 +87,7 @@ only screen and (                min-resolution: 2dppx) {
    only screen and (        min-device-pixel-ratio: 2),
    only screen and (                min-resolution: 192dpi),
    only screen and (                min-resolution: 2dppx) { 
+      
       .hero__inner {
          background-image: url("../images/hero-bg-img-tablet@2x.jpg");
       }
@@ -107,6 +107,7 @@ only screen and (                min-resolution: 2dppx) {
       padding-right: 56px;
       background-color: var(--main-very-light-grey-color);
    }
+   
    .hero__heading {
       margin-top: 0;
       margin-bottom: 48px;
@@ -126,6 +127,7 @@ only screen and (                min-resolution: 2dppx) {
    only screen and (        min-device-pixel-ratio: 2),
    only screen and (                min-resolution: 192dpi),
    only screen and (                min-resolution: 2dppx) { 
+      
       .hero__inner {
          background-image: url("../../images/hero-bg-img@2x.jpg");
       }
@@ -136,6 +138,7 @@ only screen and (                min-resolution: 2dppx) {
       max-width: 445px;
       padding-right: 55px;
    }
+   
    .hero__heading {
       font-size: 50px;
       line-height: 50px;

@@ -8,6 +8,144 @@
    <title>Contact</title>
 </head>
 <body>
-   <h2>Contact</h2>
+   
+   <!-- Site header start -->
+   <header class="site-header">
+      <div class="container">
+         <div class="site-header__inner">
+            <a class="site-logo" href="index.html">
+               <img class="site-logo__img" src="./images/site-logo.svg" alt="Site logo">
+            </a>
+            <button class="site-header__burger-btn js-nav-open js-btn-open" type="button"></button>
+            <nav class="site-nav">
+               <ul class="site-nav__list">
+                  <li class="site-nav__item">
+                     <a class="site-nav__link" href="index.html">Home</a>
+                  </li>
+                  <li class="site-nav__item">
+                     <a class="site-nav__link" href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="site-nav__item">
+                     <a class="site-nav__link site-nav__link--active" href="contact.html">Contact me</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </header>
+   <!-- Site header finish -->
+   
+   <!-- Site main start -->
+   <main class="site-main">
+      
+      <!-- Contact intro section start -->
+      <section class="contact-intro">
+         <div class="container">
+            <div class="contact-intro__inner">
+               <h2 class="contact-intro__heading">Get in Touch</h2>
+               <div class="contact-intro__text-links">
+                  <p class="contact-intro__text">
+                     I’d love to hear about what you’re working on and how I could help. I’m currently looking for a new role and am open to a wide range of opportunities. My preference would be to find a position in a company in London. But I’m also happy to hear about opportunites that don’t fit that description. I’m a hard-working and positive person who will always approach each task with a sense of purpose and attention to detail. Please do feel free to check out my online profiles below and get in touch using the form.
+                  </p>
+                  <ul class="contact-intro__list">
+                     <li class="contact-intro__item">
+                        <a class="contact-intro__link" href="#">
+                           <img class="contact-intro__link-img" src="./images/contact-github-logo.svg" alt="GitHub logo" width="25" height="24">
+                        </a>
+                     </li>
+                     <li class="contact-intro__item">
+                        <a class="contact-intro__link" href="#">
+                           <img class="contact-intro__link-img" src="./images/contact-twitter-logo.svg" alt="Twitter logo" width="24" height="20">
+                        </a>
+                     </li>
+                     <li class="contact-intro__item">
+                        <a class="contact-intro__link" href="#">
+                           <img class="contact-intro__link-img" src="./images/contact-linkedin-logo.svg" alt="GitHub logo" width="24" height="24">
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Intro section finish -->
+      
+      <!-- Contact form section start -->
+      <section class="contact-connection">
+         <div class="container">
+            <div class="contact-connection__inner">
+               <h2 class="contact-connection__heading">Contact Me</h2>
+               <form class="contact-connection__form" action="https://echo.htmlacademy.ru/courses" method="POST" autocomplete="off">
+                  <label class="contact-connection__label">
+                     Name
+                     <input class="contact-connection__input" type="text" name="user_name" minlength="3" placeholder="Jane Appleseed" required>
+                     <span class="contact-connection__error-text">This field is required</span>
+                  </label>
+                  
+                  <label class="contact-connection__label">
+                     Email Address
+                     <input class="contact-connection__input" type="email" name="user_email" minlength="10" placeholder="email@example.com" required>
+                     <span class="contact-connection__error-text">This field is required</span>
+                  </label>
+                  
+                  <label class="contact-connection__label">
+                     Message
+                     <textarea class="contact-connection__textarea" name="user_message" minlength="5" placeholder="How can I help?" required></textarea>
+                     <span class="contact-connection__error-text">This field is required</span>
+                  </label>
+                  
+                  <button class="contact-connection__btn" type="submit">Send message</button>
+               </form>
+            </div>
+         </div>
+      </section>
+      <!-- Contact form section finish -->
+
+   </main>
+   <!-- Site main finish -->
+   
+   <!-- Site footer start -->
+   <footer class="site-footer">
+      <div class="container">
+         <div class="site-footer__inner">
+            <a class="footer-logo" href="#">
+               <img class="footer-logo__img" src="./images/footer-logo.svg" alt="Site logo" width="61" height="32">
+            </a>
+            <nav class="footer-nav">
+               <ul class="footer-nav__list">
+                  <li class="footer-nav__item">
+                     <a class="footer-nav__link" href="index.html">Home</a>
+                  </li>
+                  <li class="footer-nav__item">
+                     <a class="footer-nav__link" href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="footer-nav__item">
+                     <a class="footer-nav__link" href="contact.html">Contact me</a>
+                  </li>
+               </ul>
+            </nav>
+            <ul class="site-footer__logos-list">
+               <li class="site-footer__logos-item">
+                  <a class="site-footer__logos-link" href="https://github.com/" target="blank">
+                     <img src="./images/github.svg" alt="GitHub logo" width="25" height="24">
+                  </a>
+               </li>
+               <li class="site-footer__logos-item">
+                  <a class="site-footer__logos-link" href="https://github.com/" target="blank">
+                     <img src="./images/twitter.svg" alt="Twitter logo" width="24" height="20">
+                  </a>
+               </li>
+               <li class="site-footer__logos-item">
+                  <a class="site-footer__logos-link" href="https://github.com/" target="blank">
+                     <img src="./images/linkedin.svg" alt="Linkedin logo" width="24" height="24">
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </footer>
+   <!-- Site footer finish -->
+   
+   <script src="./js/main.js"></script>
 </body>
 </html>
