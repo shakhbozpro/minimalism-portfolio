@@ -39,6 +39,7 @@
    transform: translateX(400px);
    transition: transform 0.5s ease;
    background-color: var(--main-graish-blue-color);
+   overflow-x: hidden;
 }
 
 .site-nav-open .site-header__inner .site-nav {

@@ -4,3 +4,15 @@
    margin: 0 auto;
    padding: 0 32px;
 }
+
+@include mobile-first(768px) {
+   .container {
+      padding: 0 41px 0 39px;
+   }
+}
+
+@include mobile-first(992px) {
+   .container {
+      padding: 0 20px;
+   }
+}
