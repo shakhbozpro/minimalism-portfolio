@@ -23,7 +23,7 @@ only screen and (                min-resolution: 2dppx) {
 
 .hero__texts-wrapepr {
    position: absolute;
-   top: 271px;
+   top: 270px;
    left: 0;
    margin-bottom: 96px;
 }
@@ -75,8 +75,19 @@ only screen and (                min-resolution: 2dppx) {
    }
 }
 
+@include mobile-first(370px) {
+   .hero__inner {
+      padding-top: 400px;
+   }
+
+   .hero__texts-wrapepr {
+      top: 400px;
+   }
+}
+
 @include mobile-first(615px) {
    .hero__inner {
+      padding-top: 520px;
       background-image: url("../../images/hero-bg-img-tablet.jpg");
    }
    
@@ -92,25 +103,30 @@ only screen and (                min-resolution: 2dppx) {
          background-image: url("../images/hero-bg-img-tablet@2x.jpg");
       }
    }
+
+   .hero__texts-wrapepr {
+      top: 260px;
+      width: 100%;
+      max-width: 514px;
+      padding-top: 30px;
+      padding-right: 56px;
+      background-color: var(--main-very-light-grey-color);
+   }
 }
 
 @include mobile-first(768px) {
    .hero__inner {
-      padding-top: 600px;
-   }
-   
-   .hero__texts-wrapepr {
-      top: 323px;
-      width: 100%;
-      max-width: 514px;
-      padding-top: 56px;
-      padding-right: 56px;
-      background-color: var(--main-very-light-grey-color);
+      padding-top: 630px;
    }
    
    .hero__heading {
       margin-top: 0;
       margin-bottom: 48px;
+   }
+
+   .hero__texts-wrapepr {
+      top: 346px;
+      padding-top: 62px;
    }
 }
 
@@ -133,16 +149,16 @@ only screen and (                min-resolution: 2dppx) {
       }
    }
    
-   .hero__texts-wrapepr {
-      top: 244px;
-      max-width: 445px;
-      padding-right: 55px;
-   }
-   
    .hero__heading {
       font-size: 50px;
       line-height: 50px;
       letter-spacing: -0.446429px;
       margin-bottom: 53px;
+   }
+
+   .hero__texts-wrapepr {
+      top: 239px;
+      padding-top: 60px;
+      max-width: 445px;
    }
 }
